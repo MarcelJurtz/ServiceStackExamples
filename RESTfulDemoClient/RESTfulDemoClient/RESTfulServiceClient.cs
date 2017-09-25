@@ -16,7 +16,7 @@ namespace RESTfulDemoClient
 
                 var authResponse = serviceclient.Post(new Authenticate
                 {
-                    provider = CustomAuthenticationProvider.Name, //= credentials
+                    provider = "credentials",
                     UserName = usern,
                     Password = passw,
                     RememberMe = true,
